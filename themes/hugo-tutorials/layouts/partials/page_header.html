@@ -3,10 +3,39 @@
 		<a href="https://dgraph.io/">
 			<img src="https://dgraph.io/assets/images/logo.svg">
 		</a>
+		<a href="javascript:;" class="nav-icon" >
+			<div class="hamburger">
+				<div class="line line-1"></div>
+				<div class="line line-2"></div>
+				<div class="line line-3"></div>
+			</div>
+		</a>
 	</div>
 	{{ partial "page_nav.html" }}
 	{{ partial "page_cta.html" }}
 </header>
+<div class="container">
+	<div class="row">
+		<div class="col-sm-12 mt-5">
+			<div class="position-relative tour-container">
+				
+			<select id="tour-release" class="select-release">
+				{{ range .Site.Params.tourReleases }}
+				  <option
+					value="{{ . }}"
+					{{ if (eq . $.Site.Params.thisRelease)}}
+					  selected="selected"
+					{{ end }}
+				  >
+					Dgraph {{ . }}
+				  </option>
+				{{ end }}
+			</select>
+		</div>
+		</div>
+	</div>
+</div>
+
 
 <!--
 <div class="container">
