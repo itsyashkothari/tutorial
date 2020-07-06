@@ -1,4 +1,4 @@
-baseURL = "http://dgraph-tour.geekydev.com/"
+baseURL = "https://tour.dgraph.io"
 languageCode = "en-us"
 title = "A Tour of Dgraph"
 theme="hugo-tutorials"
@@ -6,32 +6,32 @@ canonifyURLs = true
 
 [[menu.main]]
   name = "Introduction"
-  url = "/intro/1/"
+  url = "/intro/"
   identifier = "intro"
   weight = 1
 [[menu.main]]
-  name = "Basic Features"
-  url = "/basic/1/"
+  name = "Basic GraphQL+- features"
+  url = "/basic/"
   identifier = "basic"
   weight = 2
 [[menu.main]]
-  name = "Schema"
-  url = "/schema/1/"
+  name = "Schema - describe your data"
+  url = "/schema/"
   identifier = "schema"
   weight = 3
 [[menu.main]]
   name = "Data, More Data"
-  url = "/moredata/1/"
+  url = "/moredata/"
   identifier = "moredata"
   weight = 4
 [[menu.main]]
-  name = "Query Blocks, & Variables"
-  url = "/blocksvars/1/"
+  name = "Query Blocks, Query Variables and Aggregation"
+  url = "/blocksvars/"
   identifier = "blocksvars"
   weight = 5
 [[menu.main]]
-    name = "Search"
-    url = "/search/1/"
+    name = "Search - more ways to find nodes"
+    url = "/search/"
     identifier = "search"
     weight = 6
 
