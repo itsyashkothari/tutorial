@@ -224,6 +224,9 @@
 .select-styled {
   position: relative;
   width:inherit;
+  font-weight: 500;
+    font-size: 16px;
+    color: #212121;
   
   /* background-color: $select-background; */
 }
@@ -232,7 +235,7 @@
   width: 0;
   height: 0;
   font-family: 'Font Awesome 5 Pro';
-  font-weight: 900;
+  font-weight: bold;
   position: absolute;
   right: 20px;
 }
@@ -256,10 +259,15 @@ border-radius: 4px;
     line-height:32px;
     margin-bottom:0 !important;
     transition: 0.3s;
+    color: #212121;
 }
-.select-options li:hover{
+.select-options li.selected{
   background: linear-gradient(90deg, #FF4200 0.01%, #E50695 99.99%);
 opacity: 0.8;
 border-radius: 4px;
 color: #fff;
+}
+.select-options li:hover{
+  border-radius: 4px;
+  background: linear-gradient(90deg, rgba(255,66,0,0.05) .01%, rgba(229,6,149,0.05) 99.99%);
 }
